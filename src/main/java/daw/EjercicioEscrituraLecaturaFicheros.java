@@ -27,8 +27,9 @@ public class EjercicioEscrituraLecaturaFicheros {
                       2- Leer fichero
                       3- Salir
                       """;
-        int resMenu = 0;
+        
         do {
+            int resMenu = 0;
             //controlamos excepciones por si mete en el int un string
             try {
                 System.out.println(menu);
@@ -56,6 +57,7 @@ public class EjercicioEscrituraLecaturaFicheros {
                 }
             } catch (InputMismatchException fg) {
                 System.out.println("Error, Introduce un número del 1 al 3");
+                sr.nextLine();
             }
         } while (exit);
 
